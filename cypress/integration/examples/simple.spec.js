@@ -18,9 +18,7 @@ describe('Browser Actions', () => {
     it('should confirm the price', () => {
         cy.get('.price_color').contains('£23.88')
         cy.log('website loading')
+        cy.viewport('iphone-x')
     })
 
-    // it('should check for correct element on the page', () => {
-    //     cy.get('h1').should('be.visible')
-    // })
 })
